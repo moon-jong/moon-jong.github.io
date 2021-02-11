@@ -3,6 +3,7 @@ title: CNN models
 ues_math: true
 tags:
 - AI
+comments: true
 ---
 
 # Intro
