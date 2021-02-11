@@ -1,5 +1,6 @@
 ---
 title: Boostcamp Day2 python Basic
+comments: true
 tags:
 - python
 ---

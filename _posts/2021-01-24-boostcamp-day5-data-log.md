@@ -1,5 +1,6 @@
 ---
 title: Boostcamp Day5 Data & Log
+comments: true
 tags:
 - python
 ---

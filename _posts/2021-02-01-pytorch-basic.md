@@ -3,6 +3,7 @@ title: Pytorch basic
 use_math: true
 tags:
 - pytorch
+comments: true
 ---
 
 # Intro

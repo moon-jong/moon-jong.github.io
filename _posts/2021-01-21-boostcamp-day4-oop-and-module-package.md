@@ -1,5 +1,6 @@
 ---
 title: Boostcamp Day4 OOP and Module, Package
+comments: true
 ---
 
 # intro
