@@ -1,8 +1,11 @@
 ---
 title: AI math 1 vector & matrix
 use_math: true
-categories: [ AImath ]
+categories:
+- AImath
 comments: true
+tags:
+- math
 ---
 
 # Intro

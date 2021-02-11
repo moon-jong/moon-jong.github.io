@@ -1,6 +1,8 @@
 ---
 title: CNN models
 ues_math: true
+tags:
+- AI
 ---
 
 # Intro

@@ -1,6 +1,8 @@
 ---
 title: Optimization 어떻게 학습시켜야할까?
 use_math: true
+tags:
+- AI
 ---
 
 # Intro

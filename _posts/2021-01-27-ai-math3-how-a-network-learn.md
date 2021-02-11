@@ -1,6 +1,8 @@
 ---
 title: AI math3 How a network learn?
 use_math: true
+tags:
+- AI
 ---
 
 # Intro 

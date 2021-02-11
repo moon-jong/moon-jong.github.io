@@ -1,6 +1,8 @@
 ---
 title: Pytorch basic
 use_math: true
+tags:
+- pytorch
 ---
 
 # Intro

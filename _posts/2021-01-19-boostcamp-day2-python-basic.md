@@ -1,5 +1,7 @@
 ---
 title: Boostcamp Day2 python Basic
+tags:
+- python
 ---
 
 # Intro

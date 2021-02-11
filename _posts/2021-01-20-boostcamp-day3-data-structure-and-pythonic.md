@@ -1,5 +1,7 @@
 ---
 title: Boostcamp Day3 Data structure and Pythonic
+tags:
+- python
 ---
 
 # intro
