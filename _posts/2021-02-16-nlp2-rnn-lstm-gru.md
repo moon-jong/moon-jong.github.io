@@ -107,9 +107,14 @@ forget gate는 이전 hidden state와 inpu x를 RNN과 같이 weight으로 업�
 
 ## Input, gate gate
 
+![]({{ 'assets/img/images/input,gate.jpg' | relative_url }})
 
+input gate의 의도는 $x_{t}$의 정보를 dimension별로 어느정도 일부 덜어내어 보내주겠다는 의도이다.
+gate gate는 들어온 입력을 -1 부터 1까지의 값으로 정규화하여 스케일을 맞춰주는 역할을 수행한다.
 ## Output gate
-
+![]({{ 'assets/img/images/output.jpg' | relative_url }})
+output gate는 현재 셀에서의 출력으로 나가고 다음 셀에 hidden state로써 흘러가는 정보이다.
+따라서 현재 필요한 출력만을 시그모이드를 통해서 지금 당장 필요한 정보만 필터링된 상태라 이야기할 수 있다.
 ## 핵심
 vanila RNN의 gradient관련 문제를 LSTM은 특정 게이트를 통하여 비선형 곱을 취하고 서로 *더해주는*과정을 거쳐 gradient를 **복사**하는 효과를 얻을 수 있다.
 이는 ResNet에서 skip connection을 통하여 gradient vanishing을 해결하여 모델의 레이어를 더욱 깊게 쌓아 학습을 시키는 원리와 비슷한 원리라 생각한다.
