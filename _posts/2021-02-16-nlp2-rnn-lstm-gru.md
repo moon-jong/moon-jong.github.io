@@ -1,6 +1,8 @@
 ---
 title: NLP2 RNN, LSTM, GRU
 use_math: true
+tags:
+- NLP
 ---
 
 # Intro
@@ -31,7 +33,7 @@ Recurrent Neural Network의 약자로 입출력을 시퀀스로 처리하는 대
 
 ![]({{ 'assets/img/images/RNN_2.jpg' | relative_url }})
 
-핵심은 $h_{t+1}$을 만들기위하여 $x_{t}, h_{t-1}$이 사용되고 이를 $W$와 곱하는 과정이 필요하다. 
+핵심은 $h_{t+1}$을 만들기위하여 $x_{t}, h_{t-1}$이 사용되고 이를 $W$와 곱하는 과정이 필요하다.
 재귀적으로 $h_{n}$을 업데이트 하기때문에 업데이트 시켜야 할 weights가 별로 없을것 같지만 사실 시퀀스가 길어지면 길어질수록 업데이트 시켜야할 파라미터의 수는 급증한다.
 ~~그래서 파라미터가 그렇게 많았나...~~
 
@@ -57,7 +59,7 @@ many to many는 두가지로 나뉘는데 첫번째 many to many를 보면 입�
 ## Backpropagation 문제
 
 ###  Resource
-RNN과같이 시퀀스가 길게 늘어선 (수천, 수만개의 시퀀스) 데이터는 컴퓨터 메모리 리소스를 굉장히 많이 잡아먹는다. 
+RNN과같이 시퀀스가 길게 늘어선 (수천, 수만개의 시퀀스) 데이터는 컴퓨터 메모리 리소스를 굉장히 많이 잡아먹는다.
 이를 어느정도 해결하기 위하여 고안된 방법이 BPTT이다.
 
 ![]({{ 'assets/img/images/BPTT.png' | relative_url }})
@@ -72,7 +74,7 @@ RNN과같이 시퀀스가 길게 늘어선 (수천, 수만개의 시퀀스) 데�
 ![]({{ 'assets/img/images/gradient_ex.png' | relative_url }})
 위의 예시의 수식처럼 단 세번의 시퀀스만을 거쳤는데도 $h_{3}$에 대한 식이 길어진 것을 볼 수 있다.
 $h_{1}$에 대하여 편미분한다고 생각한다면 겉미분, 속미분 등 여러 단계를 거치며 공비에따라 기울기가 점점 증폭되거나 0에 수렴할 가능성이 있다.
-(위의 예제는 Gradient exploding의 경우이다. ~~시퀀스가 길어진다면~~) 
+(위의 예제는 Gradient exploding의 경우이다. ~~시퀀스가 길어진다면~~)
 
 따라서 이를 보완하기 위하여 고안된 모델이 LSTM이다.
 
@@ -95,7 +97,7 @@ $h_{1}$에 대하여 편미분한다고 생각한다면 겉미분, 속미분 등
 ![]({{ 'assets/img/images/LSTM.png' | relative_url }})
 
 LSTM도 마찬가지로 RNN계열이다 (앞서 언급한 순수 RNN을 vanila RNN이라 부른다)
-따라서 RNN과 마찬가지로 다음 hidden state, cell state를 만들 때 이 전의 hidden state와 cell state가 사용된다. 
+따라서 RNN과 마찬가지로 다음 hidden state, cell state를 만들 때 이 전의 hidden state와 cell state가 사용된다.
 다만 다른점은 네개의 게이트에서 정보를 취합, 필터링하고 이를 **더해**준다는 것이다.
 
 ## Forget gate
