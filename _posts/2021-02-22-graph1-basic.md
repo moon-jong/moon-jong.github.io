@@ -5,7 +5,7 @@ tags:
 - graph
 ---
 
-![]({{ 'assets/img/images/MSN_big.png' | relative_url }})![]({{ 'assets/img/images/jenny_insta.png' | relative_url }})# Intro
+# Intro
 그래프가 인공지능에 쓰인다는 이야기는 들어보았지만 어떻게 사용되는지에 대하여 알아본적은 없었다.
 
 이번주는 그래프 이론이 인공지능에 어떻게 사용되고 이용되는지 알아볼 수 있는 시간이 될것같다.
